@@ -9,6 +9,7 @@ module "public_eks_cluster" {
   instance_types = ["t3.medium"]
 }
 module "ingress-nginx" {
+  # note update the source link with the required version
   source     = "git::https://github.com/Noura98Houssien/simple-nginx-ingress-controller.git?ref=vx.x.x"
   cluster_id = module.puplic-eks-cluster.id
 
