@@ -1,5 +1,5 @@
 ## Scope
-This terraform module creates a simple Nginx ingress controller and Ingress service for the EKS cluster. to know more please have a look at my article on dev.io [Create a simple Ingress NGINX Controller on Amazon EKS Cluster with full example](https://dev.to/aws-builders/create-a-simple-ingress-nginx-controller-on-amazon-eks-cluster-with-full-example-5ei1)
+This terraform module creates a simple Nginx ingress controller and Ingress service for the EKS cluster. to know more please have a look at my article on dev.to [Create a simple Ingress NGINX Controller on Amazon EKS Cluster with full example](https://dev.to/aws-builders/create-a-simple-ingress-nginx-controller-on-amazon-eks-cluster-with-full-example-5ei1)
 ## Prerequisites
 You must have a running EKS cluster to able to create ingress controller on it.
 Use this [simple-EKS-cluster](https://github.com/Noura98Houssien/simple-EKS-cluster) module to create simple EKS cluster with basic requirments.
