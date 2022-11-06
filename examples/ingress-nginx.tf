@@ -10,8 +10,11 @@ module "public_eks_cluster" {
 }
 module "ingress-nginx" {
   # note update the source link with the required version
-  source     = "git::https://github.com/Noura98Houssien/simple-nginx-ingress-controller.git?ref=vx.x.x"
-  cluster_id = module.puplic-eks-cluster.id
+  source     = "git::https://github.com/Noura98Houssien/simple-nginx-ingress-controller.git?ref=v0.0.1"
+  cluster_id = module.public_eks_cluster.id
 
 
+}
+output "k8s_service_ingress_elb" {
+  value=module.ingress-nginx.k8s_service_ingress_elb
 }
